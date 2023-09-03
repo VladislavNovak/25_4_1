@@ -1,7 +1,7 @@
 ## CMAKE
 
 <details open>
-<summary><span style="color: Tomato; ">Симулятор проведения операций</span></summary>
+<summary><span style="color: Tomato; font-size: 16px">Задание: Симулятор проведения операций</span></summary>
 Реализуйте простой симулятор проведения медицинской операции у пациента. 
 Пользователь выступает в роли хирурга, который запрашивает инструменты у ассистента 
 и применяет их сообразно ситуации.
@@ -28,8 +28,8 @@
 В заголовочном файле должны находиться функции-инструменты.
 В основном файле — основная логика программы, обработка ввода пользователя.
 
-### <font color=Tomato>Советы и рекомендации</font>
-
+<details><summary>
+<span style="color:tomato; font-size: 12px">Советы и рекомендации</span></summary>
 Создайте структуру с типом двумерной координаты (точки) вместе
 с набором функций для ввода этой координаты из консоли,
 её вывода в консоль и сравнения на предмет равенства.
@@ -39,11 +39,14 @@
 
 Заголовочные файлы с расширением `.h` следует расположить в папке `include`.
 Файлы исходного кода с расширением `.cpp` — в папке `src`.
-
+</details>
 </details>
 
 <details>
-<summary><span style="color: Tomato">CMAKE</span></summary>
+<summary><span style="color: Tomato; font-size: 16px">CMAKE</span></summary>
+
+<details>
+<summary><span style="color: Tomato; font-size: 12px">Базовый:</span></summary>
 
 Нужен для правильного склеивания файлов.
 
@@ -83,7 +86,9 @@ add_executable(FirstApp src/main.cpp)
 В качестве аргумента получает папку с исполняемыми файлами
 (если они были перенесены или созданы в папке src)
 
-### <font color=Tomato>Вложенные CMAKE</font>
+</details>
+<details>
+<summary><span style="color: Tomato; font-size: 12px">Вложенные CMAKE:</span></summary>
 
 Проект может быть достаточно большим. 
 Чтобы сделать проект масштабируемым и легко сопровождаемым, 
@@ -181,4 +186,10 @@ cmake_minimum_required(VERSION 3.24)
 add_executable(FirstApp main.cpp ${MAIN_PATH}/my_math.h my_math.cpp)
 target_include_directories(FirstApp PUBLIC ${MAIN_PATH})
 ```
+</details>
+</details>
+<details>
+<summary><span style="color: Tomato; font-size: 16px">Полезные ссылки</span></summary>
+[Определение функций-членов вне определения класса](https://radioprog.ru/post/1227)
+
 </details>
