@@ -137,7 +137,7 @@ target_include_directories(FirstApp PUBLIC include)
 
 В папке `src` создадим CMakeLists. 
 В `add_executable` перечислим все зависимые файлы. 
-А в `target_include_directories` добавим путь до корневой папки:
+А в `target_include_directories` добавим путь до корневой папки заголовочных файлов:
 
 ```cmake
 cmake_minimum_required(VERSION 3.24)
@@ -190,6 +190,5 @@ target_include_directories(FirstApp PUBLIC ${MAIN_PATH})
 </details>
 <details>
 <summary><span style="color: Tomato; font-size: 16px">Полезные ссылки</span></summary>
-[Определение функций-членов вне определения класса](https://radioprog.ru/post/1227)
-
+<a href="https://radioprog.ru/post/1227" style="margin-left:16px">Определение функций-членов вне определения класса</a>
 </details>

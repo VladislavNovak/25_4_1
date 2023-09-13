@@ -1,6 +1,5 @@
 #ifndef DATE_H
 #define DATE_H
-#pragma once
 
 struct PointXY {
     double x;
